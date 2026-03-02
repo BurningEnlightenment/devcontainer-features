@@ -1,17 +1,7 @@
 
-# common-utils Dev Container Feature
+# Common Utils (common-utils)
 
-Installs the following shell tools:
-
-* [oh-my-posh](https://ohmyposh.dev/) - a prompt theme engine for any shell.
-* [zimfw](https://zimfw.sh/) - a Zsh configuration framework.
-* [delta](https://github.com/dandavison/delta) - a syntax-highlighting pager for git diff output.
-* [fd](https://github.com/sharkdp/fd) - a simple, fast and user-friendly alternative to `find`.
-* [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep recursively searches directories for a regex pattern while respecting your gitignore.
-* [scooter](https://github.com/thomasschafer/scooter) - an interactive find-and-replace in the terminal.
-* [sd](https://github.com/chmln/sd) - an intuitive, fast and user-friendly alternative to `sed`.
-
-Adds sane .zshrc defaults and currently the `microverse-power` OMP theme.
+Common utilities feature
 
 ## Example Usage
 
@@ -23,4 +13,12 @@ Adds sane .zshrc defaults and currently the `microverse-power` OMP theme.
 
 ## Options
 
-None.
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/BurningEnlightenment/devcontainer-features/blob/main/src/common-utils/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
