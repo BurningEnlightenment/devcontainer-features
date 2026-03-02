@@ -1,0 +1,34 @@
+ohmyposh_version="29.6.1"
+ohmyposh_chksum="c4399185299f59a5becad1a6a67c7dc9b5fcd082067fa7d5fafc677a78672289"
+
+rtools=( "delta" "fd" "scooter" "sd" )
+
+rtool_delta_version="0.18.2"
+rtool_delta_base_url="https://github.com/dandavison/delta/releases/download"
+rtool_delta_gnu_chksum="99607c43238e11a77fe90a914d8c2d64961aff84b60b8186c1b5691b39955b0f"
+rtool_delta_musl_chksum="b7ea845004762358a00ef9127dd9fd723e333c7e4b9cb1da220c3909372310ee"
+
+rtool_fd_version="v10.3.0"
+rtool_fd_base_url="https://github.com/sharkdp/fd/releases/download"
+rtool_fd_gnu_chksum="c3c2bc79f838e780173fc8f18b337ec273e7ba17c7ff8f551be29fc3c19b7916"
+rtool_fd_musl_chksum="2b6bfaae8c48f12050813c2ffe1884c61ea26e750d803df9c9114550a314cd14"
+
+rtool_ripgrep_version="15.1.0"
+rtool_ripgrep_base_url="https://github.com/BurntSushi/ripgrep/releases/download"
+rtool_ripgrep_deb_path="${rtool_ripgrep_version}/ripgrep_${rtool_ripgrep_version}-1_amd64.deb"
+rtool_ripgrep_deb_chksum="62ce186675c71edbc7c48a67dc36f986974551354d6ce63726adc2d85aad802c"
+
+rtool_scooter_version="v0.9.0"
+rtool_scooter_libc_variant="musl"
+rtool_scooter_base_url="https://github.com/thomasschafer/scooter/releases/download"
+rtool_scooter_musl_chksum="5db85eaed5d1ba2d6c947f87d36a339f85e3f9740c2bc8d9a9febace64f31933"
+rtool_scooter_bin_path="scooter"
+
+rtool_sd_version="v1.1.0"
+rtool_sd_libc_variant="musl" # needs GLIBC >= 2.32
+rtool_sd_base_url="https://github.com/chmln/sd/releases/download"
+rtool_sd_gnu_chksum="3613eca74cd686739bb5a6d68319aa56c747e7315274d02323a2ca2b1c5d82d2"
+rtool_sd_musl_chksum="02f00f4777d43e8e95b7b8d49e1a0d6e502fed4b8e79c1c8b8063857a30caa2e"
+
+zimfw_version="1.20.0"
+zimfw_chksum="f9362a5c5a1cfd9b54e45b9dbb651986908f838bc68cb487dec33a0c79069f84"

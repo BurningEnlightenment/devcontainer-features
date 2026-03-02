@@ -1,0 +1,17 @@
+{
+    "name": "Common Utils",
+    "id": "common-utils",
+    "version": "1.0.0",
+    "description": "Common utilities feature",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "installOhMyZsh": false,
+            "configureZshAsDefaultShell": true
+        }
+    }
+}

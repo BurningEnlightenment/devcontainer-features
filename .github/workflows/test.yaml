@@ -12,7 +12,8 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        features: []
+        features:
+          - common-utils
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -30,7 +31,8 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        features: []
+        features:
+          - common-utils
     steps:
       - uses: actions/checkout@v4
 
