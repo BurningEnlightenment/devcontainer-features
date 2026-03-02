@@ -55,6 +55,7 @@ install_ohmyposh() {
     local ohmyposh_bin="/usr/local/bin/oh-my-posh"
     curl -Lso "${ohmyposh_bin}" "https://cdn.ohmyposh.dev/releases/v${ohmyposh_version}/posh-linux-amd64"
     echo "${ohmyposh_chksum}  ${ohmyposh_bin}" | sha256sum -c -
+    chmod +x "${ohmyposh_bin}"
     mkdir -p "/usr/local/share/oh-my-posh"
     cp -rf "$FEATURE_DIR/assets/themes" "/usr/local/share/oh-my-posh/themes"
 }
@@ -64,6 +65,7 @@ install_zim() {
     cp -f "$FEATURE_DIR/assets/.zshrc" "$_REMOTE_USER_HOME/.zshrc"
     curl --create-dirs -Lso ${ZIM_HOME}/zimfw.zsh "https://github.com/zimfw/zimfw/releases/download/v${zimfw_version}/zimfw.zsh"
     echo "${zimfw_chksum}  ${ZIM_HOME}/zimfw.zsh" | sha256sum -c -
+    chown -R "${_REMOTE_USER}:${_REMOTE_USER}" "${ZIM_HOME}"
 }
 
 LIBC_VARIANT="gnu"
