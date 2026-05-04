@@ -65,7 +65,7 @@ install_zim() {
     cp -f "$FEATURE_DIR/assets/.zshrc" "$_REMOTE_USER_HOME/.zshrc"
     curl --create-dirs -Lso ${ZIM_HOME}/zimfw.zsh "https://github.com/zimfw/zimfw/releases/download/v${zimfw_version}/zimfw.zsh"
     echo "${zimfw_chksum}  ${ZIM_HOME}/zimfw.zsh" | sha256sum -c -
-    chown -R "${_REMOTE_USER}:${_REMOTE_USER}" "${ZIM_HOME}"
+    chown -R "${_REMOTE_USER}:${_REMOTE_USER}" "${_REMOTE_USER_HOME}/.cache" "$_REMOTE_USER_HOME/.zshrc"
 }
 
 LIBC_VARIANT="gnu"
